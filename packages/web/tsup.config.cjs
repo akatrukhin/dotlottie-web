@@ -19,7 +19,7 @@ module.exports = defineConfig({
   entry: ['./src/**/*.ts', './src/**/*.js'],
   format: ['esm'],
   platform: 'neutral',
-  target: ['es2020', 'node18'],
+  target: ['es2020', 'node16'],
   tsconfig: 'tsconfig.build.json',
   onSuccess: () => {
     fs.copyFileSync(

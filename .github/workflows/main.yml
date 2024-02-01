@@ -20,10 +20,10 @@ jobs:
         with:
           version: 8
 
-      - name: ⎔ Setup Node@v18
+      - name: ⎔ Setup Node@v16
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 16
 
       - name: 📥 Download deps
         run: pnpm install
@@ -76,11 +76,11 @@ jobs:
         with:
           version: 8
 
-      - name: ⎔ Setup Node@v18
+      - name: ⎔ Setup Node@v16
         uses: actions/setup-node@v4
         with:
           cache: 'pnpm'
-          node-version: 18
+          node-version: 16
           registry-url: 'https://registry.npmjs.org'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -112,7 +112,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           cache: 'pnpm'
-          node-version: 18
+          node-version: 16
           registry-url: 'https://npm.pkg.github.com/'
 
       - name: 📥 Install dependencies

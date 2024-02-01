@@ -16,6 +16,6 @@ module.exports = defineConfig({
   entry: ['./src/**/*.ts'],
   format: ['esm'],
   platform: 'browser',
-  target: ['es2020', 'node18'],
+  target: ['es2020', 'node16'],
   tsconfig: 'tsconfig.build.json',
 });
